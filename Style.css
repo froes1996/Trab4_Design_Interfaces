@@ -19,7 +19,6 @@ header{
     }
     
 }
-
 nav{
     background-color: black;
     opacity: 50%;
@@ -27,13 +26,62 @@ nav{
 
 .nav > a{
     color: #bdb5cc;
+    font-size: clamp(12px, 15px, 23px);
 }
 
 .carousel-item img{
     height: clamp(20vh, 50vh,90vh);
     width: clamp(9vw, 30vw, 55vw);
 }
-
-
-
-
+.novidades{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas:"titulo titulo" 
+                        "nov1 nov2"
+                        "nov3 nov4";
+}
+.novidades h1{
+    grid-area: titulo;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: #bdb5cc;
+    
+}
+.novidades h2{
+    color: #bdb5cc;
+}
+.novidades h3{
+    font-size: 20px;
+}
+.novidades figure img{
+    width: 25vw;
+    height: 50vh;
+}
+.novidades figure .novidade_1{
+    grid-area: nov1;
+}
+.novidades figure .novidade_2{
+    grid-area: nov2;
+}
+.novidades figure .novidade_3{
+    grid-area: nov3;
+}
+.novidades figure .novidade_4{
+    grid-area: nov4;
+}
+@media(max-width:768px){
+    .novidades{
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 23% 23% 23% 23%;
+        grid-template-areas:"titulo"
+                        "nov1"
+                        "nov2"
+                        "nov3"  
+                        "nov4";
+    }
+}
+.Comprar a{
+    font-size: white;
+}
