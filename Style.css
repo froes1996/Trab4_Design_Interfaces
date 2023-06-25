@@ -30,17 +30,17 @@ nav{
 }
 
 .carousel-item img{
-    height: clamp(20vh, 50vh,90vh);
+    height: clamp(20vh, 75vh,90vh);
     width: clamp(9vw, 30vw, 55vw);
 }
 .novidades{
     display: grid;
     justify-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25 25% 25%;
     grid-template-rows: 10% 45% 45%;
-    grid-template-areas:"titulo titulo" 
-                        "nov1 nov2"
-                        "nov3 nov4";
+    grid-template-areas:"titulo titulo titulo titulo" 
+                        "nov1 nov2 nov3 nov4"
+                        "nov5 nov6 nov7 nov8";
 }
 .novidades h1{
     grid-area: titulo;
@@ -51,13 +51,14 @@ nav{
 }
 .novidades h2{
     color: #bdb5cc;
-}
-.novidades h3{
     font-size: 20px;
 }
+.novidades h3{
+    font-size: 15px;
+}
 .novidades figure img{
-    width: 25vw;
-    height: 50vh;
+    width: 10vw;
+    height: 30vh;
 }
 .novidades figure .novidade_1{
     grid-area: nov1;
@@ -68,20 +69,42 @@ nav{
 .novidades figure .novidade_3{
     grid-area: nov3;
 }
-.novidades figure .novidade_4{
+.novidades figure .novidade_5{
+    grid-area: nov5;
+}
+.novidades figure .novidade_6{
+    grid-area: nov6;
+}
+.novidades figure .novidade_7{
+    grid-area: nov7;
+}
+.novidades figure .novidade_8{
+    grid-area: nov8;
+}
+.novidades figure .novidade_9{
     grid-area: nov4;
 }
 @media(max-width:768px){
     .novidades{
         grid-template-columns: 100%;
-        grid-template-rows: 8% 23% 23% 23% 23%;
+        grid-template-rows: auto;
         grid-template-areas:"titulo"
-                        "nov1"
-                        "nov2"
-                        "nov3"  
-                        "nov4";
+                            "nov1"
+                            "nov2"
+                            "nov3"  
+                            "nov4"
+                            "nov5"
+                            "nov6"
+                            "nov7"  
+                            "nov8";
     }
 }
-.Comprar a{
-    font-size: white;
+.botao{
+    background-color: #bdb5cc;
+   color: white;
+   border-radius: 5px;
+   width:150px;
+   height: 30px;
 }
+
+
