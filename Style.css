@@ -127,6 +127,7 @@ nav{
 }
 .novidade{
     text-align: center;
+
 }
 
 .contato {
@@ -223,6 +224,10 @@ nav{
     padding-bottom: 20px;
     color: #bdb5cc;
     font-size: clamp(12px, 25px, 40px);
+}
+.tabela{
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 footer{
