@@ -226,6 +226,7 @@ nav{
 }
 
 footer{
+    text-align: center;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -256,5 +257,7 @@ footer{
     cursor: pointer;
 }
 
-
+.voltar a{
+    color: white;
+}
 
