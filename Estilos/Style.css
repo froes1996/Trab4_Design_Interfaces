@@ -278,10 +278,11 @@ footer .social figure img{
     height: 30px;
 }
 
-@media (max-width:768px){
+
+@media (min-width:1px){
     footer{
         font-size: 15px;
-        height: 18vh;
+        height: 95px;
         text-align: center;
         grid-template-columns: 100%;
         grid-template-rows: auto;
@@ -303,7 +304,6 @@ footer .social figure img{
         margin-right: 30px;
       }
 }
-
 .voltar{
     grid-area: btn;
     align-items: center;
