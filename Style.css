@@ -41,7 +41,8 @@ nav{
     grid-template-rows: 10% 45% 45%;
     grid-template-areas:"titulo titulo titulo titulo" 
                         "nov1 nov2 nov3 nov4"
-                        "nov5 nov6 nov7 nov8";
+                        "nov5 nov6 nov7 nov8"
+                        "btn  btn   btn  btn";
 }
 .loja h1{
     grid-area: titulo;
@@ -98,7 +99,8 @@ nav{
                             "nov5"
                             "nov6"
                             "nov7"  
-                            "nov8";
+                            "nov8"
+                            "btn";
     }
     .loja img{
         width: 100%;
@@ -166,16 +168,17 @@ nav{
     cursor: pointer;
   }
   .sobre{
+    display: grid;
     text-align: center;
     align-items: center;
     justify-items: center;
-    display: grid;
+    justify-content: center;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 45% 45%;
+    grid-template-rows: auto;
     grid-template-areas: "titulos titulos"
                          "img1     text1"
                         "text2       img2"
-                        ;
+                        "btn          btn";
   }
 
   .sobre h1{
@@ -210,7 +213,8 @@ nav{
                             "img1"
                             "text1"
                             "img2"
-                            "text2";
+                            "text2"
+                            "btn";
     }
 }
 .tabela h1{
@@ -240,10 +244,17 @@ footer{
 }
 
 .voltar{
+    grid-area: btn;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-top: 30px;
     padding: 10px 20px;
     background-color: #bdb5cc;
     border: none;
     color: white;
     cursor: pointer;
 }
+
+
 
