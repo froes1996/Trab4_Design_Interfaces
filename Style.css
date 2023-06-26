@@ -254,20 +254,54 @@ nav{
 footer{
     text-align: center;
     font-size: 20px;
-    display: flex;
     align-items: center;
     color: white;
     justify-content: center;
+    justify-items: center;
     width: 100vw;
     height: 10vw;
     background-color: #bdb5cc;
+    display: grid;
+    grid-template-columns: 5% 95%;
+    grid-template-rows: auto;
+    grid-template-areas: "soc  info";
+}
+
+.social{
+    grid-area: soc;
+}
+footer p{
+    grid-area: info;
+}
+footer .social figure img{
+    width: 30px;
+    height: 30px;
 }
 
 @media (max-width:768px){
     footer{
         font-size: 15px;
         height: 18vh;
+        text-align: center;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "info"
+                                "soc";
     }
+    .social{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .social figure .facebook{
+      margin-right: 30px;
+    }
+    footer .social figure .instagram{
+        margin-right: 30px;
+      }
 }
 
 .voltar{
