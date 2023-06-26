@@ -36,6 +36,7 @@ nav{
 .loja{
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: 25% 25 25% 25%;
     grid-template-rows: 10% 45% 45%;
     grid-template-areas:"titulo titulo titulo titulo" 
@@ -224,5 +225,11 @@ footer{
     }
 }
 
-
+.form-group button a{
+    padding: 10px 20px;
+    background-color: #bdb5cc;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 
