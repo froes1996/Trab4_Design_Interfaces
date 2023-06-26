@@ -57,9 +57,9 @@ nav{
 .loja h3{
     font-size: 12px;
 }
-.loja figure img{
-    width: 20vw;
-    height: 30vh;
+.loja img{
+    width:clamp(50px, 20vw, 20vw);
+    height:clamp(30vh,50vh, 100vh);
 }
 .loja figure .novidade_1{
     grid-area: nov1;
@@ -89,7 +89,7 @@ nav{
     .loja{
         grid-template-columns: 100%;
         grid-template-rows: auto;
-        grid-template-areas:"titulo"
+        grid-template-areas:"titulo"    
                             "nov1"
                             "nov2"
                             "nov3"  
