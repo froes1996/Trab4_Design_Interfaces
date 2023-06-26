@@ -1,4 +1,5 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 header{
     display:flex;
@@ -115,6 +116,12 @@ nav{
     color: #bdb5cc;
     font-size: clamp(12px, 25px, 40px);
 }
+.container{
+    text-align: center;
+}
+.novidade{
+    text-align: center;
+}
 
 .contato {
     max-width: 600px;
@@ -154,5 +161,68 @@ nav{
     color: white;
     cursor: pointer;
   }
+  .sobre{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: "titulos titulos"
+                         "img1     text1"
+                        "text2       img2";
+  }
+
+  .sobre h1{
+    padding-bottom: 20px;
+    grid-area: titulos;
+    color: #bdb5cc;
+    font-size: clamp(12px, 25px, 40px);
+}
+.sobre p{
+    grid-area: text1;
+    color: #bdb5cc;
+}
+.sobre .sobre1{
+    grid-area: img1;
+    width: clamp(100px, 40vw, 60vw);
+    height: clamp(100px, 40vh, 60vh);
+}
+.sobre q{
+    grid-area: text2;
+    color: #bdb5cc;
+}
+.sobre .sobre2{
+    grid-area: img2;
+    width: clamp(100px, 40vw, 60vw);
+    height: clamp(100px, 40vh, 60vw);
+}
+
+.tabela h1{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    color: #bdb5cc;
+    font-size: clamp(12px, 25px, 40px);
+}
+
+footer{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    width: 100vw;
+    height: 10vw;
+    background-color: #bdb5cc;
+}
+
+@media (max-width:768px){
+    footer{
+        font-size: 15px;
+        height: 8vw;
+    }
+}
+
 
 
