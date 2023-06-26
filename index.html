@@ -14,9 +14,9 @@
     </header>
     <!----------------------------------- Menu -------------------------------------------------->
     <nav class="nav nav-pills nav-fill">
-      <a class="nav-link" href= "#novidades">NOVIDADES</a>
-      <a class="nav-link" href="#">OUTONO INVERNO</a>
-      <a class="nav-link" href="#">CONTATO</a>
+      <a class="nav-link" href= "#secao1">NOVIDADES</a>
+      <a class="nav-link" href="#secao2">EM ALTA</a>
+      <a class="nav-link" href="#secao3">CONTATO</a>
       <a class="nav-link" href="#">SOBRE</a>
     </nav>
 
@@ -59,9 +59,80 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!----------------------------Sessão 1-------------------------------------------------------->
-      <section class="novidades">
-        <h1>NOVIDADES PARA VOCÊ</h1>
+ 
+      <section class="novidade" id="secao1">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <div class="container">
+          <h1>Algumas novidades </h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <a data-toggle="modal" data-target="#modal1">
+                  <img src="img/Novidade_1.png" class="card-img-top" alt="Imagem 1">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Blusa feminina</h5>
+                  <p class="card-text">Blusa laranja </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <a data-toggle="modal" data-target="#modal2">
+                  <img src="img/Novidade_2.jpeg" class="card-img-top" alt="Imagem 2">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Calça Feminina</h5>
+                  <p class="card-text">Calça de moletom rosa</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <a data-toggle="modal" data-target="#modal3">
+                  <img src="img/Novidade_3.jpg" class="card-img-top" alt="Imagem 3">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Calça feminina</h5>
+                  <p class="card-text">Calça Jeans</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/Novidade_1.png" class="img-fluid" alt="Imagem 1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/Novidade_2.jpeg" class="img-fluid" alt="Imagem 1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal1Label" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <img src="img/Novidade_3.jpg" class="img-fluid" alt="Imagem 1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="loja" id = "secao2">
+        <h1>CONFIRA ALGUNS PRODUTOS QUE ESTÃO EM ALTA NO MOMENTO</h1>
         <figure>
           <img class="novidade_1" src="img/Novidade_1.png" alt="Blusa">
           <h2>Blusa feminina</h2>
@@ -112,11 +183,89 @@
           <h3>Por apenas R$ 249,99</h3>
             <input class="botao" type = "submit" value = "Comprar"><br>
         </figure>
+        
       </section>
+    <section class="contato" id="secao3">
+      <div class="container">
+        <h1>Entre em Contato</h1>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Enviar Mensagem</button>
+          </div>
+        </form>
+      </div>
+    </section>
 
-      <section class="Outono">
-        <h1>Mais vendidos do momento</h1>
-      </section>
+      <div class="container">
+        <h1>Caso esteja em dúvida em qual tamanho de de peça deve comprar é so dar uma olhada na tabela abaixo</h1>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Busto</th>
+              <th>Cintura</th>
+              <th>Quadril</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>36</td>
+              <td>80-84</td>
+              <td>62-66</td>
+              <td>90-94</td>
+  
+            </tr>
+            <tr>
+              <td>38</td>
+              <td>84-88</td>
+              <td>66-70</td>
+              <td>94-98</td>
+
+            </tr>
+            <tr>
+              <td>40</td>
+              <td>88-92</td>
+              <td>70-74</td>
+              <td>98-102</td>
+
+            </tr>
+            <tr>
+              <td>42</td>
+              <td>92-96</td>
+              <td>74-78</td>
+              <td>102-106</td>
+     
+            </tr>
+            <tr>
+              <td>44</td>
+              <td>96-100</td>
+              <td>78-82</td>
+              <td>106-110</td>
+   
+            </tr>
+            <tr>
+              <td>46</td>
+              <td>100-104</td>
+              <td>82-86</td>
+              <td>110-114</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
   </body>
 </html>
 
