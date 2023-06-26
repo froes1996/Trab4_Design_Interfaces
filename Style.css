@@ -46,6 +46,7 @@ nav{
 }
 .loja h2{
     grid-area: titulo;
+    text-align: center;
     padding-bottom: 30px;
     padding-top: 30px;
     color: #bdb5cc;
@@ -196,7 +197,7 @@ nav{
                         "btn          btn";
   }
 
-  .sobre h1{
+  .sobre h2{
     padding-bottom: 20px;
     grid-area: titulos;
     color: #bdb5cc;
@@ -238,7 +239,7 @@ nav{
         width: 100%;
     }
 }
-.tabela h1{
+.tabela h2{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 20px;
