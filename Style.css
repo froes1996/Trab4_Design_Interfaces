@@ -44,7 +44,7 @@ nav{
                         "nov5 nov6 nov7 nov8"
                         "btn  btn   btn  btn";
 }
-.loja h1{
+.loja h2{
     grid-area: titulo;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -129,6 +129,12 @@ nav{
     text-align: center;
     padding-top: 20px;
 
+
+}
+.novidade h2{
+    color: #bdb5cc;
+    font-size: clamp(12px, 25px, 40px);
+    text-align: center;
 
 }
 .retorno{
