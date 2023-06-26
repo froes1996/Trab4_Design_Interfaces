@@ -37,7 +37,7 @@ nav{
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 25% 25 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 10% 45% 45%;
     grid-template-areas:"titulo titulo titulo titulo" 
                         "nov1 nov2 nov3 nov4"
