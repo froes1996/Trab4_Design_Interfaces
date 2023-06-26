@@ -127,6 +127,8 @@ nav{
 }
 .novidade{
     text-align: center;
+    padding-top: 20px;
+
 
 }
 
@@ -137,7 +139,9 @@ nav{
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: white;
+    text-align: center;
   }
+
 
   .form-group {
     margin-bottom: 20px;
@@ -216,6 +220,12 @@ nav{
                             "img2"
                             "text2"
                             "btn";
+    }
+    .sobre .sobre1{
+        width:100%
+    }
+    .sobre .sobre2{
+        width: 100%;
     }
 }
 .tabela h1{
